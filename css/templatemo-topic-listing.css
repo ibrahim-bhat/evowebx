@@ -238,9 +238,13 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-image: url(./intro\ web.gif);
   padding-top: 150px;
   padding-bottom: 80px;
+}
+.site-header h2 {
+  color: coral;
+  -webkit-text-stroke: 1px white;
 }
 
 .site-header .container {
