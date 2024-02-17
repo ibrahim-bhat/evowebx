@@ -741,10 +741,10 @@ blockquote {
   TIMELINE              
 -----------------------------------------*/
 .timeline-section {
-  background-image: url('../images/colleagues-working-cozy-office-medium-shot.jpg');
+  /* background-image: url('../images/colleagues-working-cozy-office-medium-shot.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
   position: relative;
 }
 
@@ -757,7 +757,7 @@ blockquote {
 .timeline-container .vertical-scrollable-timeline .list-progress {
   width: 8px;
   height: 87%;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   position: absolute;
   left: 52px;
   top: 0;
@@ -778,7 +778,7 @@ blockquote {
   padding: 20px 0px 65px 145px;
 } */
 
-.timeline-container .vertical-scrollable-timeline li:last-child {
+/* .timeline-container .vertical-scrollable-timeline li:last-child {
   padding-bottom: 0;
 }
 
@@ -810,7 +810,7 @@ blockquote {
         width: 10px;
         height: 10px;
     }
-}
+} */
 
 
 /* .timeline-container .vertical-scrollable-timeline li .icon-holder::before {
@@ -825,7 +825,7 @@ blockquote {
   transition: 0.4s all;
 } */
 
-.timeline-container .vertical-scrollable-timeline li .icon-holder i {
+/* .timeline-container .vertical-scrollable-timeline li .icon-holder i {
   font-size: 25px;
   color: var(--white-color);
 }
@@ -838,15 +838,15 @@ blockquote {
   background-color: transparent;
   left: 52px;
   z-index: 0;
-}
+} */
 
-.timeline-container .vertical-scrollable-timeline li.active .icon-holder {
+/* .timeline-container .vertical-scrollable-timeline li.active .icon-holder {
   background-color: var(--primary-color);
 }
 
 .timeline-container .vertical-scrollable-timeline li.active .icon-holder::before {
   background-color: var(--primary-color);
-}
+} */
 
 
 /*---------------------------------------
@@ -888,6 +888,19 @@ blockquote {
 /*---------------------------------------
   CONTACT               
 -----------------------------------------*/
+.contact-header {
+  background-image: url(../images/topics/undraw_Remote_design_team_re_urdx.png);
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+.contact-header h2 {
+  color: coral;
+  -webkit-text-stroke: 3px black;
+}
+
+.contact-header .container {
+  height: 100%;
+}
 .google-map {
   border-radius: var(--border-radius-medium);
 }
