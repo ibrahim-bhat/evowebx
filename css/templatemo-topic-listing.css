@@ -889,7 +889,7 @@ blockquote {
   CONTACT               
 -----------------------------------------*/
 .contact-header {
-  background-image: url(../images/topics/undraw_Remote_design_team_re_urdx.png);
+  background: #000000;
    background-repeat: no-repeat;
   background-position: center;
   background-size: cover; 
@@ -898,7 +898,7 @@ blockquote {
 }
 .contact-header h2 {
   color: coral;
-  -webkit-text-stroke: 3px black;
+  /* -webkit-text-stroke: 3px black; */
 }
 
 .contact-header .container {
