@@ -362,6 +362,9 @@ strong {
       rotate(360deg);
   }
 }
+.paragraph-container p{
+  font-weight: 700;
+}
 
 /*---------------------------------------
   NAVIGATION              
