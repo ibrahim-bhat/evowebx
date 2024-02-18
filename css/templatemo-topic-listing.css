@@ -23,7 +23,7 @@
   --p-font-size:                  20px;
   --menu-font-size:               14px;
   --btn-font-size:                18px;
-  --copyright-font-size:          16px;
+  --copyright-font-size:          11px;
 
   --border-radius-large:          100px;
   --border-radius-medium:         20px;
@@ -974,6 +974,7 @@ blockquote {
   border-bottom: 10px solid var(--secondary-color);
   position: relative;
 }
+
 
 .site-footer::after {
   content: "";
