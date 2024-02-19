@@ -45,7 +45,7 @@
           </li>
 
           <li class="nav-item"></li>
-     
+
 
 
           <li class="nav-item">
@@ -74,59 +74,69 @@
   </style>
 
   <!-- conatct form starts here -->
-<section class="contact-us">
-  <h3 class="head">Contact US</h3>
-  <div class="col-lg-6 col-12">
-    <form id="contactForm" action="https://formspree.io/f/mleqbzjr" method="post" class="custom-form contact-form" role="form">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-12">
-          <div class="form-floating">
-            <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="" />
-            <label for="floatingInput">Name</label>
+  <section class="contact-us">
+    <h3 class="head">Contact US</h3>
+    <div class="col-lg-6 col-12">
+      <form id="contactForm" action="https://formspree.io/f/mleqbzjr" method="post" class="custom-form contact-form"
+        role="form">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-floating">
+              <input type="text" name="name" id="name" class="form-control" placeholder="Name" required />
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating">
+              <input type="text" name="PhoneNumber" id="PhoneNumber" class="form-control" placeholder="Name" required />
+              <label for="floatingInput">PhoneNumber</label>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-floating">
+              <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
+                placeholder="Email address" required />
+              <label for="floatingInput">Email address</label>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 col-12">
+            <div class="form-floating">
+              <textarea class="form-control" id="message" name="message"
+                placeholder="Tell me about the project"></textarea>
+              <label for="floatingTextarea">Write Your Queries</label>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12 ms-auto">
+            <button type="button" class=" btn custom-btn custom-border-btn smoothscroll me-4 submit-btn"
+              onclick="submitForm()"><span>
+                Submit
+              </span>
+              <i></i></button>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-12">
-          <div class="form-floating">
-            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
-              placeholder="Email address" required />
-            <label for="floatingInput">Email address</label>
-          </div>
-        </div>
-        <div class="col-lg-12 col-md-12 col-12">
-          <div class="form-floating">
-            <textarea class="form-control" id="message" name="message" placeholder="Tell me about the project"></textarea>
-            <label for="floatingTextarea">Write Your Queries</label>
-          </div>
-        </div>
-        <div class="col-lg-4 col-12 ms-auto">
-          <button type="button" class="form-control" onclick="submitForm()">Submit</button>
-        </div>
-      </div>
-    </form>
-    <div id="formStatus"></div>
-  </div>
-</section>
+      </form>
+      <div id="formStatus"></div>
+    </div>
+  </section>
 
-<script>
-  function submitForm() {
-    var form = document.getElementById("contactForm");
-    var formData = new FormData(form);
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", form.action);
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === XMLHttpRequest.DONE) {
-        if (xhr.status === 200) {
-          document.getElementById("formStatus").innerHTML = "Thank you for your message!";
-          form.reset();
-          alert("Form submitted successfully!"); // Display alert message
-        } else {
-          document.getElementById("formStatus").innerHTML = "Form submitted successfully!";
+  <script>
+    function submitForm() {
+      var form = document.getElementById("contactForm");
+      var formData = new FormData(form);
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", form.action);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            document.getElementById("formStatus").innerHTML = "Thank you for your message!";
+            form.reset();
+            alert("Form submitted successfully!"); // Display alert message
+          } else {
+            document.getElementById("formStatus").innerHTML = "Form submitted successfully!";
+          }
         }
-      }
-    };
-    xhr.send(formData);
-  }
-</script>
+      };
+      xhr.send(formData);
+    }
+  </script>
 
 
 
@@ -177,7 +187,7 @@
 
           <p class="text-white d-flex">
             <a href="mailto:support@evowebx.in" class="site-footer-link">
-                                    support@evowebx.in
+              support@evowebx.in
             </a>
           </p>
         </div>
