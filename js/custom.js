@@ -52,4 +52,23 @@
 
 
 
-  
+function submitForm() {
+  var form = document.getElementById("contactForm");
+  var formData = new FormData(form);
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", form.action);
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        document.getElementById("formStatus").innerHTML =
+          "Thank you for your message!";
+        form.reset();
+        alert("Form submitted successfully!"); // Display alert message
+      } else {
+        document.getElementById("formStatus").innerHTML =
+          "An error occurred. Please try again.";
+      }
+    }
+  };
+  xhr.send(formData);
+}
