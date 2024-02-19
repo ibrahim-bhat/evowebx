@@ -238,7 +238,7 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background: url(../images/WhatsApp\ Image\ 2024-02-18\ at\ 10.50.31\ PM.jpeg) center no-repeat  ;
+  background: url(../images/WhatsApp\ Image\ 2024-02-18\ at\ 10.50.31\ PM.jpeg) center no-repeat cover ;
   padding-top: 150px;
   padding-bottom: 80px; 
 }
