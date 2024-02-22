@@ -22,6 +22,9 @@
 
     <link href="css/bootstrap-icons.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-T8Q/dOabbg23vefDoU7Ke2oj4AA58IJ6Goh0vL8F2npfviTj1ZfBnvb1m+ssyrV57BPY18VwXp0ZMZUJZyRi5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <link href="css/templatemo-topic-listing.css" rel="stylesheet">
     <style>
         @media (max-width: 767px) {
@@ -98,6 +101,9 @@
                         <li class="nav-item">
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link  " href="./about.html">About </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link click-scroll" href="./additional-software.html">Softwars</a>
                         </li>
 
@@ -122,6 +128,21 @@
             </div>
         </nav>
 
+        <!-- psoter offer -->
+<div id="offerBox" class="offer-box">
+    <div class="offer-content">
+        <h3>Personal Portfolio Website!</h3>
+        <p>Only In 500 inr. Hurry, offer ends soon!</p>
+        <div id="callButton" class="call-button"><i class="bi bi-phone-fill me-2"></i><a href="tel: +91 9906622700" class="site-footer-link">
+                                    9906622700
+                                </a></div>
+    </div>
+    <button id="closeButton" class="close-button">&times;</button>
+</div>
+
+
+
+
 
 
         <!-- home -->
@@ -131,12 +152,12 @@
 
                     <div class="col-lg-5 col-12 mb-5">
 
-                        <h2>Welcome to <br> EvoWebx</h2>
+                        <!-- <h2>Welcome to <br> EvoWebx</h2> -->
 
-                       <div class="d-flex align-items-center mt-5">
+                       <!-- <div class="d-flex align-items-center mt-5">
     <a href="about.html" class="btn custom-btn custom-border-btn smoothscroll me-4 box">
         <span>About US</span>
-        <i></i>
+        <i></i> -->
     </a>
 </div>
 
@@ -377,31 +398,41 @@
 
         <!-- Subscription Section -->
 
-        <style>
-            .card-section {
-                margin: 2rem;
-                min-height: 40vw;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+<style>
+    .card-section {
+        margin: 2rem;
+        min-height: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-            }
+    .card img {
+        height: 14rem;
+        width: 14rem;
+        flex-shrink: 3;
+    }
 
-            .card img {
-                height: 14rem;
-                width: 14rem;
-                flex-shrink: 3;
-            }
+    .card-body {
+        font-size: 14px; /* Default font size */
+    }
 
-            @media (max-width: 800px) {
-                .card-group {
-                    flex-direction: column;
-                    align-items: center;
-                }
-            }
-
-  
-        </style>
+    @media (max-width: 500px) {
+        .card img{
+            height: 7rem;
+        width: 7rem;
+        }
+        .card-body h5{
+            font-size: 16px;
+        }
+         .card-body h6{
+            font-size: 14px;
+        }
+         .card-body p{
+            font-size: 12px;
+        }
+    }
+</style>
 <section class="card-section">
     <div class="card-group d-flex flex-wrap">
         <div class="card border-start shadow-lg p-3 mb-5 bg-body-tertiary rounded m-4 card-body d-flex flex-column align-items-center">
@@ -414,23 +445,23 @@
                     <span class="text-black">&#10003; 1 Week Free Website Service</span><br>
                     <span class="text-black">&#10003; Special Offer: 50% Off Second Week</span>
                 </p>
-               <a href="./contact.html"><button  type="button" class="custom-btn btn-outline-secondary">contact us</button> </a> 
+                <a href="./contact.html"><button type="button" class="custom-btn btn-outline-secondary">contact us</button></a>
             </div>
         </div>
-      <div class="card border-start shadow-lg p-3 mb-5 bg-body-tertiary rounded m-4 card-body d-flex flex-column align-items-center">
-    <img src="./images/custom.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">CUSTOM</h5>
-        <h6>According to Time Complexity <span class="month">/ per page </span> </h6>
-        <p class="card-text">
-            <span class="text-black">&#10003; 3 months free domain, hosting, and domain name</span><br>
-            <span class="text-black">&#10003; 1 Week Free Website Service</span><br>
-            <span class="text-black">&#10003; Special Offer: 50% Off Second Week</span>
-        </p>
-        <a href="./contact.html"><button  type="button" class="custom-btn btn-outline-secondary">contact us</button> </a> 
-    </div>
-</div>
- <div class="card border-start shadow-lg p-3 mb-5 bg-body-tertiary rounded m-4 card-body d-flex flex-column align-items-center">
+        <div class="card border-start shadow-lg p-3 mb-5 bg-body-tertiary rounded m-4 card-body d-flex flex-column align-items-center">
+            <img src="./images/custom.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">CUSTOM</h5>
+                <h6>According to Time Complexity <span class="month">/ per page </span> </h6>
+                <p class="card-text">
+                    <span class="text-black">&#10003; 3 months free domain, hosting, and domain name</span><br>
+                    <span class="text-black">&#10003; 1 Week Free Website Service</span><br>
+                    <span class="text-black">&#10003; Special Offer: 50% Off Second Week</span>
+                </p>
+                <a href="./contact.html"><button type="button" class="custom-btn btn-outline-secondary">contact us</button></a>
+            </div>
+        </div>
+        <div class="card border-start shadow-lg p-3 mb-5 bg-body-tertiary rounded m-4 card-body d-flex flex-column align-items-center">
             <img src="./images/portfolio.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">PORTFOLIO</h5>
@@ -440,14 +471,12 @@
                     <span class="text-black">&#10003; 1 Week Free Website Service</span><br>
                     <span class="text-black">&#10003; Special Offer: 50% Off Second Week</span>
                 </p>
-                 <a href="./contact.html"><button  type="button" class="custom-btn btn-outline-secondary">contact us</button> </a> 
+                <a href="./contact.html"><button type="button" class="custom-btn btn-outline-secondary">contact us</button></a>
             </div>
         </div>
-
-        </div>
-       
     </div>
 </section>
+
 
 
 
@@ -705,6 +734,11 @@
             </div>
         </section>
     </main>
+
+    <a id="callButton" class="call-button1" href="tel:+91 9906622700">
+    <img src="./images/1608790_phone_icon.png" alt="Call Now">
+</a>
+
 
     <footer class="site-footer section-padding">
         <div class="container">

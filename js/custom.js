@@ -51,3 +51,21 @@
   })(window.jQuery);
 
 
+// poster offer 
+document.addEventListener("DOMContentLoaded", function () {
+  var offerBox = document.getElementById("offerBox");
+  var closeButton = document.getElementById("closeButton");
+
+  // Show the offer box
+  offerBox.style.display = "block";
+
+  // Close the offer box when close button is clicked
+  closeButton.addEventListener("click", function () {
+    offerBox.style.display = "none";
+  });
+
+  // Automatically close the offer box after 10 seconds
+  setTimeout(function () {
+    offerBox.style.display = "none";
+  }, 20000000);
+});

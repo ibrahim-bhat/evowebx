@@ -232,6 +232,57 @@ strong {
   border-color: var(--white-color);
   color: var(--white-color);
 }
+/* poster offer */
+.offer-box {
+    position: fixed;
+    bottom: 120px;
+    right: 30px;
+    width: 300px;
+    background-color: #fff;
+    border: 3px solid #1b4dab;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: +10000;
+}
+
+.offer-box::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(2px); 
+    z-index: -1;
+}
+
+.offer-content {
+    padding: 20px;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* .call-button {
+    background-color: #1b4dab;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+} */
+
+
+
 
 
 /*---------------------------------------
@@ -948,6 +999,33 @@ blockquote {
 .timeline-container .vertical-scrollable-timeline li.active .icon-holder::before {
   background-color: var(--primary-color);
 } */
+
+.call-button1 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px;
+    background-color:  #80d0c7;
+    border-radius: 50px;
+    /* color: #fff; */
+    cursor: pointer;
+
+}
+
+.call-button1 img {
+    width: 70px; /* Adjust size as needed */
+}
+@media (max-width:500px) {
+  .call-button1 img{
+    width: 60px;
+  }
+}
+@media (max-width:400px) {
+  .call-button1 img{
+    width: 50px;
+  }
+}
 
 
 /*---------------------------------------
