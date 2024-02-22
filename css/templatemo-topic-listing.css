@@ -234,8 +234,8 @@ strong {
 /* poster offer */
 .offer-box {
     position: fixed;
-    bottom: 120px;
-    right: 30px;
+    bottom: 40%;
+    right: 50%;
     width: 300px;
     background-color: #fff;
     border: 3px solid #1b4dab;
@@ -244,7 +244,12 @@ strong {
     display: none;
     z-index: +10000;
 }
+@media (max-width:600px) {
+.offer-box {
+  right: 50px;
+}
 
+}
 .offer-box::before {
     content: "";
     position: fixed;
