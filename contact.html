@@ -45,9 +45,6 @@
           </li>
 
           <li class="nav-item"></li>
-          <li class="nav-item">
-                            <a class="nav-link  " href="./about.html">About </a>
-                        </li>
      
 
 
@@ -77,38 +74,48 @@
   </style>
 
   <!-- conatct form starts here -->
-<section class="contact-us">
-  <h3 class="head">Contact US</h3>
-  <div class="col-lg-6 col-12">
-    <form id="contactForm" action="https://formspree.io/f/mleqbzjr" method="post" class="custom-form contact-form" role="form">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-12">
-          <div class="form-floating">
-            <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="" />
-            <label for="floatingInput">Name</label>
+  <section class="contact-us">
+    <h3 class="head">Contact US</h3>
+    <div class="col-lg-6 col-12">
+      <form id="contactForm" action="https://formspree.io/f/mleqbzjr" method="post" class="custom-form contact-form"
+        role="form">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-floating">
+              <input type="text" name="name" id="name" class="form-control" placeholder="Name" required />
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating">
+              <input type="text" name="PhoneNumber" id="PhoneNumber" class="form-control" placeholder="Name" required />
+              <label for="floatingInput">PhoneNumber</label>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-floating">
+              <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
+                placeholder="Email address" required />
+              <label for="floatingInput">Email address</label>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 col-12">
+            <div class="form-floating">
+              <textarea class="form-control" id="message" name="message"
+                placeholder="Tell me about the project"></textarea>
+              <label for="floatingTextarea">Write Your Queries</label>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12 ms-auto">
+            <button type="button" class=" btn custom-btn custom-border-btn smoothscroll me-4 submit-btn"
+              onclick="submitForm()"><span>
+                Submit
+              </span>
+              <i></i></button>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-12">
-          <div class="form-floating">
-            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
-              placeholder="Email address" required />
-            <label for="floatingInput">Email address</label>
-          </div>
-        </div>
-        <div class="col-lg-12 col-md-12 col-12">
-          <div class="form-floating">
-            <textarea class="form-control" id="message" name="message" placeholder="Tell me about the project"></textarea>
-            <label for="floatingTextarea">Write Your Queries</label>
-          </div>
-        </div>
-        <div class="col-lg-4 col-12 ms-auto">
-          <button type="button" class="form-control" onclick="submitForm()">Submit</button>
-        </div>
-      </div>
-    </form>
-    <div id="formStatus"></div>
-  </div>
-</section>
+      </form>
+      <div id="formStatus"></div>
+    </div>
+  </section>
 
 <script>
   function submitForm() {
@@ -130,9 +137,6 @@
     xhr.send(formData);
   }
 </script>
-    <a id="callButton" class="call-button1" href="tel:+91 9906622700">
-    <img src="./images/1608790_phone_icon.png" alt="Call Now">
-</a>
 
 
 
@@ -183,7 +187,7 @@
 
           <p class="text-white d-flex">
             <a href="mailto:support@evowebx.in" class="site-footer-link">
-                                    support@evowebx.in
+              support@evowebx.in
             </a>
           </p>
         </div>
