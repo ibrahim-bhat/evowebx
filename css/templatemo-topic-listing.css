@@ -788,7 +788,10 @@ strong {
 } */
 
     /* <!-- Enhanced Online Presence Section --> */
-
+.card img {
+  width: 8rem; 
+  height: 8rem; 
+}
 /* Default text size */
 .enhanced-online-presence p {
   font-size: 16px;
