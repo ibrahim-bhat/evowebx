@@ -774,7 +774,7 @@ strong {
 
 
 /* cards  */
-@media (max-width: 401px) {
+/* @media (max-width: 401px) {
   .card-title {
     font-size: 1rem !important; 
   }
@@ -785,7 +785,7 @@ strong {
   .card-text {
     font-size: 0.6rem !important;
   }
-}
+} */
 
     /* <!-- Enhanced Online Presence Section --> */
 
