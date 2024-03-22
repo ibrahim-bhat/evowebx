@@ -1,6 +1,6 @@
 :root {
   --white-color: #ffffff;
-  --primary-color: #13547a;
+  --primary-color: #1A237E;
   --secondary-color: #80d0c7;
   --section-bg-color: #f0f8ff;
   --custom-btn-bg-color: #80d0c7;
@@ -745,6 +745,79 @@ strong {
   color: var(--white-color);
   max-width: 150px;
 }
+.hero-section h1 {
+  font-size: 2.5rem; 
+}
+.hero-section h6 {
+  font-size: 1rem; 
+}
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 1.5rem; 
+  }
+
+  .hero-section h6 {
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 1.2rem; 
+  }
+
+  .hero-section h6 {
+    font-size: 0.8rem; 
+  }
+}
+
+
+
+/* cards  */
+@media (max-width: 401px) {
+  .card-title {
+    font-size: 1rem !important; 
+  }
+  .card-body h6{
+    font-size: 0.6rem !important;
+
+  }
+  .card-text {
+    font-size: 0.6rem !important;
+  }
+}
+
+    /* <!-- Enhanced Online Presence Section --> */
+
+/* Default text size */
+.enhanced-online-presence p {
+  font-size: 16px;
+}
+
+/* Media query for small screens */
+@media (max-width: 576px) {
+  .enhanced-online-presence p {
+    font-size: 14px;
+  }
+}
+
+/* Media query for medium screens */
+@media (min-width: 577px) and (max-width: 768px) {
+  .enhanced-online-presence p {
+    font-size: 10px;
+  }
+}
+
+/* Media query for large screens */
+@media (min-width: 769px) {
+  .enhanced-online-presence p {
+    font-size: 16px; /* Resetting font size to default for larger screens */
+  }
+}
+
+
+
+
 
 
 /*---------------------------------------
