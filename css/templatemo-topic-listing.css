@@ -893,6 +893,111 @@ strong {
 }
 
 
+/* checkout */
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container-fluid {
+    padding: 50px 0;
+}
+
+.section-title {
+    margin-bottom: 40px;
+}
+
+.section-title__title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.row {
+    margin: 0 -15px;
+}
+
+.col-md-3 {
+    padding: 0 15px;
+}
+
+/* Pricing tables */
+.pricing-table {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-table .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pricing-table .pricing-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-table .pricing-content ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.pricingTable-Sign-Up a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.pricingTable-Sign-Up a:hover {
+    background-color: #0056b3;
+}
+
+/* Checkout form */
+.checkout-form-container {
+    display: none;
+    margin-top: 30px;
+}
+
+.checkout-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form h4 {
+    margin-bottom: 20px;
+}
+
+.checkout-form .form-control {
+    margin-bottom: 15px;
+}
+
+.checkout-form .btn-primary {
+    margin-top: 20px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .col-md-3 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+
 
 
 /*---------------------------------------

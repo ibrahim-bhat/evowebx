@@ -69,3 +69,20 @@ document.addEventListener("DOMContentLoaded", function () {
     offerBox.style.display = "none";
   }, 20000000);
 });
+
+
+// checkout 
+document.addEventListener("DOMContentLoaded", function () {
+  const orderButtons = document.querySelectorAll(".order-now-button");
+  const checkoutFormContainer = document.getElementById(
+    "checkoutFormContainer"
+  );
+
+  orderButtons.forEach((button) => {
+    button.addEventListener("click", function (event) {
+      event.preventDefault();
+      checkoutFormContainer.style.display = "block";
+      checkoutFormContainer.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+});
